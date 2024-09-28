@@ -1,0 +1,122 @@
+/* EmployeeDashboard.css */
+
+.employee-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Align title and logout button */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5a67d8;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #434190; /* Darker shade on hover */
+}
+
+.attendance-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.attendance-overview h2 {
+  margin-bottom: 20px;
+}
+
+.attendance-overview ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  width: 100%; /* Full width */
+}
+
+.attendance-overview li {
+  display: flex;
+  justify-content: space-between; /* Space between date and status */
+  background-color: rgba(255, 255, 255, 0.1); /* Background for list items */
+  margin: 5px 0; /* Space between items */
+  padding: 10px;
+  border-radius: 5px;
+  color: white; /* Default text color */
+}
+
+.present {
+  color: green; /* Green color for present */
+}
+
+.absent {
+  color: red; /* Red color for absent */
+}
+
+.status {
+  margin-left: auto; /* Push status to the right */
+}
+
+/* View Attendence */
+.attendance-container {
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark background for contrast */
+  color: white; /* White text for better readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.attendance-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Glowing effect */
+}
+
+.error-message {
+  color: red; /* Red color for error messages */
+  text-align: center;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Space above the table */
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+}
+
+.attendance-table th {
+  background-color: #5a67d8; /* Header background color */
+  color: white; /* Header text color */
+}
+
+.attendance-table tr:hover {
+  background-color: rgba(90, 103, 216, 0.1); /* Highlight on hover */
+}
+
+.present {
+  color: green; /* Green for present status */
+}
+
+.absent {
+  color: red; /* Red for absent status */
+}
